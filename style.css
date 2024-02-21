@@ -273,9 +273,28 @@ a {
   right: -35rem;
   border-radius: 50% 50%;
   border-top-left-radius: 90%;
+  border-bottom-left-radius: 70%;
   transform: rotateX(50%);
   background-color: #e3051b;
   z-index: -100;
+}
+.section-3 .btn {
+  background-color: #e3051b;
+}
+.section-3 .btn:hover {
+  background-color: #b60416;
+}
+.section-3 .pa-1 {
+  color: #0f253b;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.section-3 .carousel-control-next-icon {
+  font-weight: bold;
+}
+.section-3 i {
+  top: -60px;
+  left: 20px;
 }
 
 .section-4 h1 {
@@ -283,7 +302,7 @@ a {
   color: #e3051b;
   font-weight: bolder;
 }
-.section-4 .p-1 {
+.section-4 .pa-1 {
   color: #0f253b;
   font-weight: bolder;
   font-size: 18px;
@@ -306,6 +325,40 @@ a {
 .section-4 .par-2 {
   font-size: 14px;
 }
-.section-4 .p-2 span {
-  font-weight: bolder;
+
+footer {
+  background-color: #e3051b;
+  border-top-right-radius: 43%;
+  border-top-left-radius: 18%;
+  height: 300px;
+  z-index: -100;
+}
+
+.col-7 .col:hover {
+  color: #b60416 !important;
+  cursor: pointer;
+}
+
+.col-5 i:hover {
+  color: #b60416;
+  cursor: pointer;
+}
+
+footer-end {
+  z-index: 10000;
+}
+footer-end .container-fluid {
+  background-color: #b60416;
+  border-top-right-radius: 14%;
+  border-top-left-radius: 20%;
+  top: -100px;
+  left: 0;
+}
+footer-end .col {
+  font-size: 9px;
+  font-weight: bold;
+}
+footer-end .col-4:hover {
+  color: #df505e;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
