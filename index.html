@@ -26,10 +26,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- navbar -->
-    <nav>
-      <nav-1 class="navbar fixed-top pt-4 position-absolute">
-        <div class="container-fluid mx-5 d-flex mb-3">
+    <nav-2>
+      <nav-1 class="navbar fixed-top pt-4 position-absolute nav-4">
+        <div class="container-fluid mx-md-5 d-flex mb-3">
           <div class="me-auto p-2">
             <a class="navbar-brand" href="#"
               ><img
@@ -38,7 +37,8 @@
                 alt=""
             /></a>
           </div>
-          <div class="text-white media">
+
+          <div class="text-white media d-none d-md-block">
             <i class="bi bi-facebook"></i>
             <i class="bi bi-twitter-x ps-3"></i>
             <i class="bi bi-instagram ps-3"></i>
@@ -49,7 +49,7 @@
               >&nbsp;&nbsp;&nbsp;&nbsp;</i
             >
           </div>
-          <div class="pe-4">
+          <div class="pe-4 nav-hidden">
             <div
               class="btn border-0 ms-5 fw-bold"
               data-bs-toggle="offcanvas"
@@ -299,6 +299,223 @@
           </div>
         </div>
       </nav-1>
+    </nav-2>
+    <nav class="navbar navbar-expand-lg container navbar-responsive">
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#navbarOffcanvasLg"
+        aria-controls="navbarOffcanvasLg"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="offcanvas w-100 offcanvas-end"
+        tabindex="-1"
+        id="navbarOffcanvasLg"
+        aria-labelledby="navbarOffcanvasLgLabel"
+      >
+        <div class="offcanvas-header">
+          <h5
+            class="offcanvas-title fw-bold text-dark"
+            id="navbarOffcanvasLgLabel"
+          >
+            ÜLKER
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white fw-bold"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ÜLKER HAKKINDA
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >HAKKIMIZDA</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >TARİHÇEMİZ</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >KURUCUMUZ</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white fw-bold"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                TOPLUM İÇİN
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >SOSYAL SORUMLULUK</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >SÜRDÜREBİLİRLİK</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >İŞ BİRLİKLERİMİZ</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white fw-bold"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                KURUMSAL
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >YILDIZ HOLDİNG</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >PLADİS</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >GODIVA</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white fw-bold"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                BASIN MERKEZİ
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >HABERLER</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >LOGOLAR</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white fw-bold"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                İLETİŞİM
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >BİZE ULAŞIN</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >İŞ İLANLARIMIZ</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >SPONSORLUK BAŞVURUSU</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white fw-bold"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ÜLKER TV
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item text-danger bg-white fw-bold" href="#"
+                    >YOUTUBE KANALIMIZ
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <!-- nav slider -->
     <nav-slider>
@@ -481,9 +698,13 @@
     <!-- main -->
     <div class="main position-relative">
       <div class="container">
-        <h1 class="d-flex justify-content-end fw-bold">ÜRÜNLER</h1>
+        <h1
+          class="d-flex justify-content-center justify-content-md-end fw-bold"
+        >
+          ÜRÜNLER
+        </h1>
         <div class="row gx-5 justify-content-center align-items-center">
-          <div class="col-2 btn p-3">
+          <div class="col-6 col-md-2 btn p-3 order-2 order-md-1">
             <img
               class="shadow-lg bg-body-tertiary overflow-visible img-fluid"
               style="width: 120px"
@@ -497,19 +718,19 @@
             </p>
           </div>
 
-          <div class="col-2 btn">
+          <div class="col-6 col-md-2 order-3 order-md-2 btn">
             <img
               class="shadow-lg bg-body-tertiary overflow-visible mt-4"
               style="width: 120px"
               src="https://www.ulker.com.tr/documents/markalar_kategori/cikolatakapli_barlar.png"
               alt=""
             />
-            <p class="fw-bold mt-5">
+            <p class="fw-bold mt-3 mt-md-5 pe-3 pe-md-0">
               ÇİKOLATA KAPLI GOFRET & BARLAR
               <span class="position-absolute chevron-2">></span>
             </p>
           </div>
-          <div class="col-2 btn p-3">
+          <div class="col-6 col-md-2 btn p-3 order-4 order-md-3">
             <img
               class="shadow-lg bg-body-tertiary overflow-visible"
               style="width: 120px"
@@ -522,13 +743,17 @@
             </p>
           </div>
 
-          <div class="col-6">
-            <h3 class="d-flex justify-content-end text-end fw-bold pt-4">
+          <div class="col-12 col-md-6 order-1 order-md-4">
+            <h3
+              class="d-flex justify-content-center justify-content-md-end text-end fw-bold pt-4"
+            >
               ÜLKER'DE HERKESE <br />
               UYGUN BİR TAT <br />
               MUTLAKA VARDIR!
             </h3>
-            <p class="pt-3 text-secondary d-flex justify-content-end text-end">
+            <p
+              class="pt-3 text-secondary d-flex justify-content-center justify-content-md-end text-end"
+            >
               Ülker onlarca markasıyla farklı damak <br />
               tatlarına hitap ediyor. Hayatın her anında <br />
               ağzınızı tatlandırıyor. Büyük ailemizle <br />
@@ -541,7 +766,7 @@
         <br />
         <br />
         <div class="row gx-5 justify-content-center align-items-center">
-          <div class="col btn p-3">
+          <div class="col-6 col-md btn p-3">
             <img
               class="shadow-lg bg-body-tertiary overflow-visible"
               style="width: 120px"
@@ -549,12 +774,12 @@
               alt=""
             />
 
-            <p class="fw-bold mt-4 position-relative">
+            <p class="fw-bold mt-5 position-relative">
               TATLI BİSKÜVİLER
               <span class="position-absolute chevron">></span>
             </p>
           </div>
-          <div class="col btn p-3">
+          <div class="col-6 col-md btn p-3">
             <img
               class="shadow-lg bg-body-tertiary overflow-visible img-fluid"
               style="width: 120px"
@@ -562,12 +787,12 @@
               alt=""
             />
 
-            <p class="fw-bold mt-4">
+            <p class="fw-bold mt-5 me-3 me-md-0">
               TUZLU BİSKÜVİLER
               <span class="position-absolute chevron">></span>
             </p>
           </div>
-          <div class="col btn p-3">
+          <div class="col-6 col-md btn p-3">
             <img
               class="shadow-lg bg-body-tertiary overflow-visible img-fluid"
               style="width: 120px"
@@ -579,20 +804,20 @@
               <span class="position-absolute chevron">></span>
             </p>
           </div>
-          <div class="col btn p-3">
+          <div class="col-6 col-md btn p-3">
             <img
-              class="shadow-lg bg-body-tertiary overflow-visible"
+              class="shadow-lg bg-body-tertiary overflow-visible pt-4"
               style="width: 120px"
               src="https://www.ulker.com.tr/documents/markalar_kategori/gofretler.png"
               alt=""
             />
 
-            <p class="fw-bold mt-4">
+            <p class="fw-bold mt-5">
               GOFRETLER
               <span class="position-absolute chevron-3">></span>
             </p>
           </div>
-          <div class="col btn p-3">
+          <div class="col-6 col-md btn p-3">
             <img
               class="shadow-lg bg-body-tertiary overflow-visible"
               style="width: 120px"
@@ -612,7 +837,7 @@
         <br />
 
         <div class="row">
-          <div class="col btn p-3">
+          <div class="col-6 col-md btn p-3">
             <img
               class="shadow-lg bg-body-tertiary overflow-visible"
               style="width: 120px"
@@ -620,12 +845,12 @@
               alt=""
             />
 
-            <p class="fw-bold mt-4">
+            <p class="fw-bold mt-5">
               KEKLER
               <span class="position-absolute chevron-3">></span>
             </p>
           </div>
-          <div class="col btn p-3">
+          <div class="col-6 col-md btn p-3">
             <img
               class="shadow-lg bg-body-tertiary overflow-visible"
               style="width: 120px"
@@ -638,20 +863,20 @@
               <span class="position-absolute chevron-3">></span>
             </p>
           </div>
-          <div class="col btn p-3">
+          <div class="col-6 col-md btn p-3">
             <img
-              class="shadow-lg bg-body-tertiary overflow-visible"
+              class="shadow-lg bg-body-tertiary overflow-visible pt-3"
               style="width: 120px"
               src="https://www.ulker.com.tr/documents/markalar_kategori/sekerlemeyeni.png"
               alt=""
             />
 
-            <p class="fw-bold mt-4">
+            <p class="fw-bold mt-5">
               ŞEKERLEMELER
               <span class="position-absolute chevron">></span>
             </p>
           </div>
-          <div class="col btn p-3">
+          <div class="col-6 col-md btn p-3">
             <img
               class="shadow-lg bg-body-tertiary overflow-visible"
               style="width: 120px"
@@ -659,13 +884,13 @@
               alt=""
             />
 
-            <p class="fw-bold mt-4">
+            <p class="fw-bold mt-5">
               İKRAMLIK ÇİKOLATA & <br />
               ŞEKERLEMELER
               <span class="position-absolute chevron">></span>
             </p>
           </div>
-          <div class="col btn p-3">
+          <div class="col-12 col-md btn p-3">
             <img
               class="shadow-lg bg-body-tertiary overflow-visible"
               style="width: 120px"
@@ -679,22 +904,6 @@
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-2 btn">
-            <img
-              class="shadow-lg bg-body-tertiary overflow-visible mt-4"
-              style="width: 120px"
-              src="https://www.ulker.com.tr/documents/ulker_pastil/sekerleme2.png"
-              alt=""
-            />
-            <p class="fw-bold mt-5">
-              TAKVİYE EDİCİ <br />
-              GIDALAR
-              <span class="position-absolute chevron">></span>
-            </p>
-          </div>
-          <div class="Offset-10"></div>
-        </div>
       </div>
       <br />
       <br />
@@ -703,14 +912,14 @@
       <br />
       <br />
 
-      <div class="section d-flex ms-5 overflow-hidden">
-        <div class="ms-5">
-          <h1 class="ps-3">
+      <div class="section d-flex ms-5 position-relative">
+        <div class="ms-md-5">
+          <h1 class="ps-md-3 text-start">
             Ülker İçimdeki Çocuğu Mutlu <br />
             Eder
           </h1>
         </div>
-        <div class="picture">
+        <div class="picture d-none d-md-block">
           <div class="circle position-absolute">
             <div class="anımasyon">
               <img
@@ -722,8 +931,8 @@
         </div>
       </div>
       <div class="container mt-5 section-2">
-        <div class="row pt-3 justify-content-center align-items-start">
-          <div class="col-4 gx-5 px-2">
+        <div class="row pt-md-3 justify-content-center align-items-start">
+          <div class="col-12 col-md-4 gx-md-5 px-md-2 pb-4 pb-md-0">
             Ülker küçücük bir ısırıkta, kolayca, bi’ çırpıda, düşünmeden mutlu
             eder. Tıpkı çocukların bi’ çırpıda, gönlünden koptuğunca mutlu
             olduğu gibi.. Büyüsek de hepimizin içinde var olmaya devam eden
@@ -731,22 +940,28 @@
             içimizden geldiği gibi mutlu hissettiren tüm Ülker markalarının
             enerjisiyle… Ülker içimdeki çocuğu mutlu eder.
           </div>
-          <div class="col-8 justify-content-center align-items-center">
-            <div class="row justify-content-center align-items-center">
+          <div
+            class="col-12 col-md-8 justify-content-center align-items-center"
+          >
+            <div
+              class="row justify-content-md-center justify-content-evenly align-items-center"
+            >
               <div class="col-4">
-                <div class="ruffles position-relative">
+                <div class="ruffles position-relative d-none d-md-block">
                   <img
                     class="position-absolute cips"
                     src="https://www.ulker.com.tr/Templates/Default/assets/img/mutlu-et-dekor-cips.png"
                     alt=""
                   />
                 </div>
-                <a href="https://youtu.be/1D8RFh8AEDI"
-                  ><i
-                    class="bi bi-play-fill fs-1 position-absolute text-white"
-                  ></i>
+                <a href="https://youtu.be/1D8RFh8AEDI">
+                  <div class="position-relative d-none d-md-block">
+                    <i
+                      class="bi bi-play-fill fs-1 position-absolute text-white"
+                    ></i>
+                  </div>
                   <img
-                    class="rounded-4 img-fluid"
+                    class="rounded-5 img-fluid"
                     src="https://www.ulker.com.tr/documents/_thumbs/Multimedia/Ulker_Multimedia_AlbumPhotosAndVideos/hqdefaultb8318708f3794087a0dceb5c65e2452a_320_320.jpg?v=lc3ZPzn66vGjcgRFqls_r1nUxS3M6xp9NGnrB5I7G1k1"
                     alt=""
                 /></a>
@@ -762,7 +977,7 @@
                 <a
                   href="https://www.youtube.com/embed/MQn0HjC6u4s?autoplay=0&rel=0&iv_load_policy=3&modestbranding=0&showinfo=0"
                 >
-                  <div class="div position-relative">
+                  <div class="div position-relative d-none d-md-block">
                     <i
                       class="bi bi-play-fill fs-1 position-absolute text-white"
                     ></i>
@@ -777,7 +992,7 @@
             <br />
             <div class="row justify-content-center align-items-center">
               <div class="col-4">
-                <div class="biskuvi-2 position-relative">
+                <div class="biskuvi-2 position-relative d-none d-md-block">
                   <img
                     class="position-absolute biskuvi w-75"
                     src="https://www.ulker.com.tr/Templates/Default/assets/img/mutlu-et-dekor-kremali.png"
@@ -794,7 +1009,7 @@
               </div>
               <div class="col-4">
                 <a href="https://youtu.be/JGVcNmVrx4s">
-                  <div class="div position-relative">
+                  <div class="div position-relative d-none d-md-block">
                     <i
                       class="bi bi-play-fill fs-1 position-absolute text-white"
                     ></i>
@@ -812,7 +1027,7 @@
                     src="https://www.ulker.com.tr/documents/_thumbs/Multimedia/Ulker_Multimedia_AlbumPhotosAndVideos/5559b6cd32657410da9abd9cfb591a7e6_320_320.jpg?v=GMDAjEMgrG41l7MHrcXBcVzkUcq3OdFY-egrbE8QHj01"
                     alt=""
                 /></a>
-                <div class="cho position-relative">
+                <div class="cho position-relative d-none d-md-block">
                   <img
                     class="position-absolute cho-2"
                     src="https://www.ulker.com.tr/Templates/Default/assets/img/mutlu-et-dekor-findikli.png"
@@ -825,7 +1040,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="picture-2">
+        <div class="picture-2 d-none d-md-block">
           <div class="halley position-relative">
             <div class="anımasyon position-absolute">
               <img
@@ -841,12 +1056,12 @@
     <br />
     <br />
 
-    <div class="news container d-flex justify-content-end text-end">
-      <h1>HABERLER</h1>
+    <div class="news container-fluid mx-5 d-flex justify-content-end text-end">
+      <h1 style="margin-right: 90px">HABERLER</h1>
     </div>
     <div class="container-fluid px-5">
       <div class="row gx-5">
-        <div class="col-3">
+        <div class="col-12 col-md-3">
           <div class="card border-0 rounded-5" style="width: 18rem">
             <img
               src="https://www.ulker.com.tr/documents/haberler/2020/ceo_mete_buyurgan.jpg"
@@ -867,7 +1082,7 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-3">
           <div class="card border-0 rounded-5" style="width: 18rem">
             <img
               src="https://www.ulker.com.tr/documents/ulker_potibor(1).jpg"
@@ -888,7 +1103,7 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-3">
           <div class="card border-0 rounded-5" style="width: 18rem">
             <img
               src="https://www.ulker.com.tr/documents/ulker_ali_aga_bugdayi.jpg"
@@ -909,7 +1124,7 @@
             </div>
           </div>
         </div>
-        <div class="col-3 news-2">
+        <div class="col-12 col-md-3 news-2">
           <h2 class="text-end">Ülker'den al haberi.</h2>
           <div class="btn text-white btn-lg d-flex text-center">
             <a
@@ -929,9 +1144,9 @@
     <br />
     <br />
     <br />
-    <div class="section-3 container-fluid mx-5">
+    <div class="section-3 container-fluid mx-md-5">
       <div class="row justify-content-center align-items-center">
-        <div class="col-3">
+        <div class="col-12 col-md-3">
           <h1>Ülker TV</h1>
         </div>
 
@@ -947,7 +1162,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row gx-2">
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <p class="pa-1">
                   İçindeki çocuğu ortaya çıkarmak için Ülker lezzetlerinde bir
                   ısırık al yeter.🍫🥧🍪
@@ -961,11 +1176,11 @@
                   >
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <a href="https://www.youtube.com/watch?v=BD_1ED7VOWg"
                   ><img
                     src="https://www.ulker.com.tr/documents/1(1).jpg"
-                    class="d-block img-fluid rounded-4"
+                    class="d-block img-fluid rounded-4 mt-4 mt-md-0"
                     alt="..."
                 /></a>
                 <div class="div position-relative">
@@ -977,9 +1192,9 @@
             </div>
           </div>
 
-          <div class="carousel-item">
-            <div class="row gx-2">
-              <div class="col-4">
+          <div class="carousel-item container">
+            <div class="row gx-md-2">
+              <div class="col-12 col-md-4">
                 <p class="pa-1">
                   İçindeki çocuğun en mutlu anlarında Ülker lezzetleri
                   yanında.🍫🥧🍪
@@ -993,11 +1208,11 @@
                   >
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <a href="https://youtu.be/cfvgDdoLQhU"
                   ><img
                     src="https://www.ulker.com.tr/documents/2(2).jpg"
-                    class="d-block img-fluid rounded-4"
+                    class="d-block img-fluid rounded-4 mt-4 mt-md-0"
                     alt="..."
                 /></a>
                 <div class="div position-relative">
@@ -1010,7 +1225,7 @@
           </div>
           <div class="carousel-item">
             <div class="row gx-2">
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <p class="pa-1">Ekstra bi'Biskrem versem?</p>
                 <div class="btn btn-lg mt-3">
                   <a
@@ -1021,11 +1236,11 @@
                   >
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <a href="https://youtu.be/RiENDgrcfWM"
                   ><img
                     src="https://www.ulker.com.tr/documents/ulker_tv/extrabiskrem_ulkertv.jpg"
-                    class="d-block img-fluid rounded-4"
+                    class="d-block img-fluid rounded-4 mt-5 mt-md-0"
                     alt="..."
                 /></a>
                 <div class="div position-relative">
@@ -1038,7 +1253,7 @@
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          class="carousel-control-prev d-none d-md-block"
           type="button"
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev"
@@ -1052,7 +1267,10 @@
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            class="carousel-control-next-icon d-none d-md-block"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -1063,10 +1281,10 @@
     <br />
     <br />
     <br />
-    <div class="section-4 container-fluid mx-5">
+    <div class="section-4 container-fluid mx-md-5">
       <h1>Sürdürülebilirlik</h1>
       <div class="row justify-content-center align-items-center">
-        <div class="col-2">
+        <div class="col-12 col-md-2">
           <p class="pt-5 pa-1">
             1944’ten bu yana farklı kategorilerde gıda ürünlerini
             tüketicilerimizle buluşturuyoruz. İşimizi yaparken çiftçimizden
@@ -1075,9 +1293,9 @@
           </p>
         </div>
 
-        <div class="col btn mt-4">
+        <div class="col-6 col-md btn mt-4">
           <img
-            class="shadow-lg bg-body-tertiary"
+            class="shadow-lg bg-body-tertiary img-fluid"
             style="width: 140px"
             src="https://www.ulker.com.tr/documents/icon_235x24501.png"
             alt=""
@@ -1085,9 +1303,9 @@
           <p class="fw-bold pt-3">ÇEVRE</p>
           <p class="par-2">DEVAMINI OKU <span class="fw-bold">></span></p>
         </div>
-        <div class="col btn mt-4">
+        <div class="col-6 col-md btn mt-4">
           <img
-            class="shadow-lg bg-body-tertiary"
+            class="shadow-lg bg-body-tertiary img-fluid"
             style="width: 140px"
             src="https://www.ulker.com.tr/documents/icon_235x24502.png"
             alt=""
@@ -1095,9 +1313,9 @@
           <p class="fw-bold pt-3">DEĞER ZİNCİRİ</p>
           <p class="par-2">DEVAMINI OKU <span class="fw-bold">></span></p>
         </div>
-        <div class="col mt-4 btn">
+        <div class="col-6 col-md mt-4 btn">
           <img
-            class="shadow-lg bg-body-tertiary"
+            class="shadow-lg bg-body-tertiary img-fluid"
             style="width: 140px"
             src="https://www.ulker.com.tr/documents/icon_235x24503.png"
             alt=""
@@ -1107,7 +1325,7 @@
         </div>
       </div>
       <div class="row justify-content-center align-items-center">
-        <div class="col-2">
+        <div class="col-12 col-md-2">
           <p class="pt-5 pa-1">
             Sürdürülebilirlik yaklaşımını, iş yapış şeklimizin merkezine
             yerleştirerek, yeni nesillere yaşanabilir ve mutlu bir dünya
@@ -1116,7 +1334,7 @@
           </p>
         </div>
 
-        <div class="col btn mt-4">
+        <div class="col-6 col-md btn mt-4">
           <img
             class="shadow-lg bg-body-tertiary"
             style="width: 140px"
@@ -1126,7 +1344,7 @@
           <p class="fw-bold pt-3">ÇALIŞANLAR</p>
           <p class="par-2">DEVAMINI OKU <span class="fw-bold">></span></p>
         </div>
-        <div class="col btn mt-4">
+        <div class="col-6 col-md btn mt-4">
           <img
             class="shadow-lg bg-body-tertiary"
             style="width: 140px"
@@ -1136,7 +1354,7 @@
           <p class="fw-bold pt-3">TOPLUMSAL SORUMLULUK</p>
           <p class="par-2">DEVAMINI OKU <span class="fw-bold">></span></p>
         </div>
-        <div class="col mt-4 btn">
+        <div class="col-6 col-md mt-4 btn">
           <img
             class="shadow-lg bg-body-tertiary"
             style="width: 140px"
@@ -1163,16 +1381,18 @@
           </div>
         </div>
         <div class="row pt-5">
-          <div class="col-7">
+          <div class="col-12 col-md-7">
             <div class="row fw-bold text-white">
               <div class="col">HABERLER</div>
               <div class="col">KURUMSAL</div>
               <div class="col">ÜLKER TV</div>
-              <div class="col">YATIRIMCI İLŞ.</div>
-              <div class="col">BİZE ULAŞIN</div>
+              <div class="col d-none d-md-block">YATIRIMCI İLŞ.</div>
+              <div class="col d-none d-md-block">BİZE ULAŞIN</div>
             </div>
           </div>
-          <div class="col-5 text-end text-white fs-5">
+          <div
+            class="col-12 col-md-5 text-center pt-3 pt-md-0 text-md-end text-white fs-5"
+          >
             <i class="bi bi-facebook"></i>
             <i class="bi bi-twitter-x ps-4"></i>
             <i class="bi bi-instagram ps-4"></i>
@@ -1189,10 +1409,10 @@
             <div class="col-4 fs-3 fw-bold">YILDIZ HOLDING</div>
             <div class="offset-3 col-5">
               <div class="row">
-                <div class="col-8">
+                <div class="d-none d-md-block col-md-8">
                   2024 YILDIZ HOLDING TÜM HAKLARI SAKLIDIR
                 </div>
-                <div class="col-4">KULLANIM KOŞULLARI</div>
+                <div class="col-4 col-md-4">KULLANIM KOŞULLARI</div>
               </div>
             </div>
           </div>

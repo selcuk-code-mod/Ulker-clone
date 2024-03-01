@@ -50,7 +50,7 @@ body {
   overflow-x: hidden;
 }
 
-nav {
+nav-2 {
   span .bi-list {
     height: 100px;
   }
@@ -97,8 +97,8 @@ nav {
     color: #0f253b;
   }
 
-  .col-2 p,
-  .col p {
+  .col-6 p,
+  .col-md p {
     color: #0f253b;
     font-size: 0.7rem;
   }
@@ -110,46 +110,46 @@ nav {
     display: none;
   }
 
-  .col-2:hover,
-  .col:hover {
+  .col-6:hover,
+  .col-md:hover {
     transform: scale(1.52);
     transition: 0.5s;
     transition-timing-function: ease-out;
   }
-  .col-2:hover .chevron {
+  .col-6:hover .chevron {
     left: 130px;
     display: unset;
   }
-  .col:hover .chevron {
+  .col-md:hover .chevron {
     left: 150px;
     display: unset;
   }
-  .col-2:hover .chevron-2 {
+  .col-6:hover .chevron-2 {
     left: 140px;
     display: unset;
   }
-  .col:hover .chevron-3 {
+  .col-md:hover .chevron-3 {
     left: 135px;
     display: unset;
   }
 
-  .col-2 img,
-  .col img {
+  .col-6 img,
+  .col-md img {
     background-color: white;
     border-top-left-radius: 40%;
     border-top-right-radius: 70%;
     border-bottom-left-radius: 70%;
     border-bottom-right-radius: 60%;
   }
-  .col-2:hover img,
-  .col:hover img {
+  .col-6:hover img,
+  .col-md:hover img {
     background-color: #b60416 !important;
   }
-  .col-2:hover p,
-  .col:hover p {
+  .col-6:hover p,
+  .col-md:hover p {
     transform: scale(1);
   }
-  .col-2 .img-end {
+  .col-6 .img-end {
     background-color: white;
     border-top-left-radius: 40%;
     border-top-right-radius: 40%;
@@ -164,16 +164,16 @@ nav {
   .circle {
     width: 600px;
     height: 500px;
-    top: 72rem;
-    right: -25rem;
+    top: -12rem;
+    right: -20rem;
     border-radius: 50% 50%;
     transform: rotateX(50%);
     background-color: #e3051b;
-    z-index: -100;
+    z-index: -10000;
   }
   .anımasyon {
     position: absolute;
-    animation: hareket 6s infinite alternate;
+    animation: hareket 4s infinite alternate;
     animation-timing-function: linear;
   }
 
@@ -322,19 +322,19 @@ a {
     font-size: 18px;
   }
 
-  .col:hover {
+  .col-md:hover {
     transform: scale(1.22);
     transition: 0.2s;
     transition-timing-function: linear;
   }
-  .col img {
+  .col-md img {
     background-color: white;
     border-top-left-radius: 20%;
     border-top-right-radius: 40%;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
   }
-  .col:hover img {
+  .col-md:hover img {
     background-color: #b60416 !important;
   }
   .par-2 {
@@ -349,11 +349,11 @@ footer {
   z-index: -100;
 }
 
-.col-7 .col:hover {
+.col-md-7 .col:hover {
   color: #b60416 !important;
   cursor: pointer;
 }
-.col-5 i:hover {
+.col-md-5 i:hover {
   color: #b60416;
   cursor: pointer;
 }
@@ -376,5 +376,125 @@ footer-end {
   .col-4:hover {
     color: #df505e;
     cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    .nav-1 {
+      .offcanvas {
+        z-index: 1000000;
+        top: 0;
+      }
+    }
+    .navbar-brand {
+      img {
+        width: 60px !important;
+        height: auto;
+      }
+    }
+  }
+  .main {
+    .col-6 {
+      img {
+        width: 80px !important;
+      }
+    }
+    .btn {
+      border-color: none !important;
+      border: none !important;
+    }
+    .col-6:hover,
+    .col-md:hover {
+      transform: scale(1.12);
+      transition: 0.5s;
+      transition-timing-function: ease-out;
+    }
+  }
+  .big-circle {
+    width: 400px !important;
+    height: 250px !important;
+    top: -15rem;
+    left: 15rem;
+    border-radius: 50% 50%;
+    border-top-left-radius: 90%;
+    border-bottom-left-radius: 70%;
+    transform: rotateX(50%);
+    background-color: #e3051b;
+    z-index: -100;
+  }
+  .section-3 {
+    z-index: -1000;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .col-4 {
+    img {
+      width: 80px !important;
+    }
+  }
+  .news {
+    h1 {
+      font-size: 3rem;
+      padding-right: 18px;
+    }
+  }
+  .nav-4 {
+    display: none !important;
+  }
+  .offcanvas {
+    color: white;
+    background-color: #e3051b !important;
+  }
+  .navbar-responsive {
+    background-color: #db1e24 !important;
+  }
+  .navbar-toggler {
+    background-color: #db1e24 !important;
+    color: #db1e24 !important;
+  }
+  .btn-close {
+    margin-right: 270px !important;
+  }
+  .main {
+    .container h1 {
+      font-size: 3rem;
+    }
+  }
+  .col-md:hover .chevron-3 {
+    right: 0px;
+    display: unset;
+  }
+  .section-4 {
+    h1 {
+      font-size: 2.5rem;
+      color: #e3051b;
+      font-weight: bolder;
+    }
+    .col-md {
+      border-color: none !important;
+      border: none;
+    }
+    .col-md img {
+      width: 60px !important;
+    }
+  }
+  .card:hover {
+    transform: scale(1);
+    transition: 0.4s;
+  }
+  footer {
+    background-color: #e3051b;
+    border-top-right-radius: 43%;
+    border-top-left-radius: 18%;
+    height: 400px;
+    z-index: -100;
+  }
+}
+
+@media (min-width: 769px) {
+  nav {
+    display: none !important;
   }
 }

@@ -41,31 +41,31 @@ body {
   overflow-x: hidden;
 }
 
-nav span .bi-list {
+nav-2 span .bi-list {
   height: 100px;
 }
-nav .media i {
+nav-2 .media i {
   cursor: pointer !important;
 }
-nav .menu:hover {
+nav-2 .menu:hover {
   color: #b60416;
 }
-nav .en {
+nav-2 .en {
   border-left-color: #b60416 !important;
   border-radius: 3px;
   cursor: pointer;
 }
-nav .en:hover {
+nav-2 .en:hover {
   color: #b60416;
 }
-nav .end {
+nav-2 .end {
   border-right-color: #b60416 !important;
   border-radius: 3px;
 }
-nav .media i:hover {
+nav-2 .media i:hover {
   color: #b60416;
 }
-nav .menu:hover {
+nav-2 .menu:hover {
   color: #b60416 !important;
 }
 
@@ -86,8 +86,8 @@ nav .menu:hover {
 .main h3 {
   color: #0f253b;
 }
-.main .col-2 p,
-.main .col p {
+.main .col-6 p,
+.main .col-md p {
   color: #0f253b;
   font-size: 0.7rem;
 }
@@ -97,45 +97,45 @@ nav .menu:hover {
   color: #0f253b;
   display: none;
 }
-.main .col-2:hover,
-.main .col:hover {
+.main .col-6:hover,
+.main .col-md:hover {
   transform: scale(1.52);
   transition: 0.5s;
   transition-timing-function: ease-out;
 }
-.main .col-2:hover .chevron {
+.main .col-6:hover .chevron {
   left: 130px;
   display: unset;
 }
-.main .col:hover .chevron {
+.main .col-md:hover .chevron {
   left: 150px;
   display: unset;
 }
-.main .col-2:hover .chevron-2 {
+.main .col-6:hover .chevron-2 {
   left: 140px;
   display: unset;
 }
-.main .col:hover .chevron-3 {
+.main .col-md:hover .chevron-3 {
   left: 135px;
   display: unset;
 }
-.main .col-2 img,
-.main .col img {
+.main .col-6 img,
+.main .col-md img {
   background-color: white;
   border-top-left-radius: 40%;
   border-top-right-radius: 70%;
   border-bottom-left-radius: 70%;
   border-bottom-right-radius: 60%;
 }
-.main .col-2:hover img,
-.main .col:hover img {
+.main .col-6:hover img,
+.main .col-md:hover img {
   background-color: #b60416 !important;
 }
-.main .col-2:hover p,
-.main .col:hover p {
+.main .col-6:hover p,
+.main .col-md:hover p {
   transform: scale(1);
 }
-.main .col-2 .img-end {
+.main .col-6 .img-end {
   background-color: white;
   border-top-left-radius: 40%;
   border-top-right-radius: 40%;
@@ -150,16 +150,16 @@ nav .menu:hover {
 .section .circle {
   width: 600px;
   height: 500px;
-  top: 72rem;
-  right: -25rem;
+  top: -12rem;
+  right: -20rem;
   border-radius: 50% 50%;
   transform: rotateX(50%);
   background-color: #e3051b;
-  z-index: -100;
+  z-index: -10000;
 }
 .section .anımasyon {
   position: absolute;
-  animation: hareket 6s infinite alternate;
+  animation: hareket 4s infinite alternate;
   animation-timing-function: linear;
 }
 .section img {
@@ -307,19 +307,19 @@ a {
   font-weight: bolder;
   font-size: 18px;
 }
-.section-4 .col:hover {
+.section-4 .col-md:hover {
   transform: scale(1.22);
   transition: 0.2s;
   transition-timing-function: linear;
 }
-.section-4 .col img {
+.section-4 .col-md img {
   background-color: white;
   border-top-left-radius: 20%;
   border-top-right-radius: 40%;
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
 }
-.section-4 .col:hover img {
+.section-4 .col-md:hover img {
   background-color: #b60416 !important;
 }
 .section-4 .par-2 {
@@ -334,12 +334,12 @@ footer {
   z-index: -100;
 }
 
-.col-7 .col:hover {
+.col-md-7 .col:hover {
   color: #b60416 !important;
   cursor: pointer;
 }
 
-.col-5 i:hover {
+.col-md-5 i:hover {
   color: #b60416;
   cursor: pointer;
 }
@@ -361,4 +361,105 @@ footer-end .col {
 footer-end .col-4:hover {
   color: #df505e;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav .nav-1 .offcanvas {
+    z-index: 1000000;
+    top: 0;
+  }
+  nav .navbar-brand img {
+    width: 60px !important;
+    height: auto;
+  }
+  .main .col-6 img {
+    width: 80px !important;
+  }
+  .main .btn {
+    border-color: none !important;
+    border: none !important;
+  }
+  .main .col-6:hover,
+  .main .col-md:hover {
+    transform: scale(1.12);
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+  }
+  .big-circle {
+    width: 400px !important;
+    height: 250px !important;
+    top: -15rem;
+    left: 15rem;
+    border-radius: 50% 50%;
+    border-top-left-radius: 90%;
+    border-bottom-left-radius: 70%;
+    transform: rotateX(50%);
+    background-color: #e3051b;
+    z-index: -100;
+  }
+  .section-3 {
+    z-index: -1000;
+  }
+  .section-3 h1 {
+    font-size: 2rem;
+  }
+  .col-4 img {
+    width: 80px !important;
+  }
+  .news h1 {
+    font-size: 3rem;
+    padding-right: 18px;
+  }
+  .nav-4 {
+    display: none !important;
+  }
+  .offcanvas {
+    color: white;
+    background-color: #e3051b !important;
+  }
+  .navbar-responsive {
+    background-color: #db1e24 !important;
+  }
+  .navbar-toggler {
+    background-color: #db1e24 !important;
+    color: #db1e24 !important;
+  }
+  .btn-close {
+    margin-right: 270px !important;
+  }
+  .main .container h1 {
+    font-size: 3rem;
+  }
+  .col-md:hover .chevron-3 {
+    right: 0px;
+    display: unset;
+  }
+  .section-4 h1 {
+    font-size: 2.5rem;
+    color: #e3051b;
+    font-weight: bolder;
+  }
+  .section-4 .col-md {
+    border-color: none !important;
+    border: none;
+  }
+  .section-4 .col-md img {
+    width: 60px !important;
+  }
+  .card:hover {
+    transform: scale(1);
+    transition: 0.4s;
+  }
+  footer {
+    background-color: #e3051b;
+    border-top-right-radius: 43%;
+    border-top-left-radius: 18%;
+    height: 400px;
+    z-index: -100;
+  }
+}
+@media (min-width: 769px) {
+  nav {
+    display: none !important;
+  }
 }/*# sourceMappingURL=style.css.map */
